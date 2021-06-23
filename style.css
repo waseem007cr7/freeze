@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo 2', cursive;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --navbar-height: 58px;
+}
+
+h2{
+    margin: 20px 90px;
+    color: rgb(131, 130, 130);
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+
+#navbar ul{
+    padding-left: 750px;
+    display: flex;
+    font-family: 'Baloo 2', cursive;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    display: block;
+    padding: 3px 22px;
+    /* padding-left: 50px; */
+    border-radius: 20px;
+    color: rgb(131, 130, 130);
+    text-decoration: none;
+    transition: 1s;
+}
+
+#navbar ul li a:hover{
+    color: rgb(0, 0, 0);
+    background-color: white;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 4px 207px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    background: url('./img/bg.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 800px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+
+#content{
+    margin-top: 172px;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    background-color: rgb(241, 234, 235);
+}
+
+.para{
+    height: 100%;
+    width: 50%;
+    padding-top: 100px;
+}
+
+h3{
+    size: 1.2rem;
+    padding: 12px;
+    color: salmon;
+}
+
+p{
+    size: 1rem;
+    padding: 12px;
+}
+
+.img{
+    height: 100%;
+    width: 50%;
+}
+
+#footer{
+    display: flex;
+    height: 200px;
+    width: 100%;
+    background-color: rgb(144, 197, 91);
+}
+
+.fimg{
+    padding-top: 20px;
+    height: 180px;
+    width: 25%;
+}
+
+footer .fimg img:hover{
+cursor: pointer;
+}
+
+.center{
+    text-align: center;
+    align-items: center;
+}
